@@ -2,7 +2,7 @@
 
 ## Requirements
 
-You need [Docker](https://www.docker.com/) installed on this machine as well as [NodeJS](https://www.nodejs.org)
+You need [Docker](https://www.docker.com/) & [NodeJS](https://www.nodejs.org) installed.
 
 ## Usage
 
