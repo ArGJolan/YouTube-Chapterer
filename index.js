@@ -57,7 +57,11 @@ const find = (startPath, filter) => {
     if (stat.isDirectory()) {
       find(filename, filter)
     } else if (filename.endsWith(filter)) {
-      handleChapters(filename)
+      try {
+        handleChapters(filename)
+      } catch (e) {
+        console.error(`Could not process ${filename} - ${e.message || e}`)
+      }
     }
   }
 }
